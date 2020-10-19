@@ -1,4 +1,5 @@
 ##Serialization
+
 Stack used to go through tree starting from a far left branch.
 
 `null` is used for non-existing nodes. ` ` is used as separator.
@@ -17,6 +18,7 @@ Will be serialized as
 ```
 
 ##Deserialization
+
 Tree will be generated starting from the top node, and a far left branch.
 
 Stack of a branch will be used.
@@ -29,4 +31,6 @@ If case when second `null` is met, deserialized leaves a current node and moves 
  - Recursion not used
  - Code has been submitted on a Leetcode and passed
  - All logic in `Codec.java`
+ - `Stack.peek()` may be used in some cases
+
  
