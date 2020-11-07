@@ -1,4 +1,4 @@
-##Serialization
+## Serialization
 
 Stack used to go through tree starting from a far left branch.
 
@@ -17,7 +17,7 @@ Will be serialized as
 1 2 null null 3 null null 
 ```
 
-##Deserialization
+## Deserialization
 
 Tree will be generated starting from the top node, and a far left branch.
 
@@ -27,7 +27,7 @@ If `null` is met, that means that deserializer should stay on this node and read
 
 If case when second `null` is met, deserialized leaves a current node and moves on a branch up until it's empty or node with empty right child has been found.
 
-###Notes
+### Notes
  - Recursion not used
  - Code has been submitted on a Leetcode and passed
  - All logic in `Codec.java`
