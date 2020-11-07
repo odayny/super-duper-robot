@@ -1,8 +1,8 @@
 import java.util.Stack;
 
 public class QueueWith2Stacks<T> implements Queue<T> {
-    Stack<T> stack1 = new Stack<>();
-    Stack<T> stack2 = new Stack<>();
+    private final Stack<T> stack1 = new Stack<>();
+    private final Stack<T> stack2 = new Stack<>();
     @Override
     public boolean isEmpty() {
         return stack1.isEmpty() && stack2.isEmpty();

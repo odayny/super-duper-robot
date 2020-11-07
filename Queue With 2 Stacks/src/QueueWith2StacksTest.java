@@ -1,4 +1,4 @@
-public class Test {
+public class QueueWith2StacksTest {
     public static void main(String[] args) {
         Queue<Integer> queue = new QueueWith2Stacks<>();
         queue.enqueue(1);
