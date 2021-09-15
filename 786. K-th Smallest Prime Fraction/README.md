@@ -11,7 +11,7 @@ m 0     1     2     3
 1 2/7 < 2/5 < 2/3
 2 3/5 < 3/7
 3 5/7
-```
+
 
 add m[0,0]
 check pq.size vs k
@@ -21,3 +21,4 @@ add m[0,2], m[1,1], m[2,0]
 ...
 if k < pq.size
 peek kth
+```
