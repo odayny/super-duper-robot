@@ -20,7 +20,7 @@ Each string does not contain leading zeros except for the zero itself.
 */
 
 class Solution {
-    public String addBinary(String a, String b) {
+    public String addBinary_(String a, String b) {
         int acc = 0;
         int len = Math.max(a.length(), b.length());
         StringBuilder res = new StringBuilder();
@@ -54,5 +54,24 @@ class Solution {
             res = res.insert(0, '1');
         }
         return res.toString();
+    }
+ 
+ //cleaner
+     public String addBinary(String a, String b) {
+        int acc = 0;
+        StringBuilder res = new StringBuilder();
+        int aIdx = 0;
+        int bIdx = 0;
+        while(aIdx < a.length() || bIdx < b.length() || acc > 0) {
+            if (aIdx < a.length()) {
+                acc += a.charAt(a.length() - aIdx++ - 1) - '0';
+            }
+            if (bIdx < b.length()) {
+                acc += b.charAt(b.length() - bIdx++ - 1) - '0';
+            }
+            res.append(acc%2);
+            acc /=2;
+        }
+        return res.reverse().toString();
     }
 }
