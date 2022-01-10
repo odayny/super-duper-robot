@@ -69,9 +69,9 @@ class Solution {
             if (bIdx < b.length()) {
                 acc += b.charAt(b.length() - bIdx++ - 1) - '0';
             }
-            res.append(acc%2);
+            res.insert(0, acc%2);
             acc /=2;
         }
-        return res.reverse().toString();
+        return res.toString();
     }
 }
