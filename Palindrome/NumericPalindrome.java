@@ -4,7 +4,7 @@ found this on some mock interview https://www.youtube.com/watch?v=L0sZqKFzCBs
 note: until it's a getting a math problem its veeery easy
 */
 
-public class Palindrome {
+public class NumericPalindrome {
     public static void main(String[] args) {
         int length = 8 ; //input
 
