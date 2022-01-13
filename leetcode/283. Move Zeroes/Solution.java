@@ -22,8 +22,8 @@ Constraints:
 
 Follow up: Could you minimize the total number of operations done?
  */
-  class Solution {
-    public void moveZeroes(int[] nums) {
+class Solution {
+    public void moveZeroes_(int[] nums) {
         // fuck 'move' work. let's just shift everything
         int source = 0;
         int target = 0;
@@ -36,5 +36,20 @@ Follow up: Could you minimize the total number of operations done?
                 source++;
             }
         }
+    }
+    public void moveZeroes(int[] nums) {
+        mvZ(nums, nums.length-1);
+    }
+    private int mvZ(int[] nums, int end) {
+        if (0 == end) {
+            return nums[0] == 0 ? -1 : 0;
+        }
+        int target = mvZ(nums, end - 1);
+        if (nums[end] != 0 && (end - target > 1)) {
+            nums[++target] = nums[end];
+            nums[end] = 0;
+            return target;
+        }
+        return nums[target + 1] == 0 ? target : target+1;
     }
 }
