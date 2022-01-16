@@ -1,5 +1,3 @@
-package com.odayny;
-
 public class PalindromeWithRemoval {
     /*
     Given a string and the ability to delete at most one character, return whether or not it can form a palindrome.
@@ -18,6 +16,29 @@ public class PalindromeWithRemoval {
         
     }
 
+    /*
+     * recursion warning, lol
+     * lets take 'foabaxof' as example
+     * start check as a regular palingdrome task
+     * 
+     * > foabaxof
+     * > ^      ^
+     * 
+     * to check rest of the string - use recursion
+     * 
+     * > oabaxo
+     * > ^    ^
+     * 
+     * but allow one failure by moving pointers by one char
+     * > abax  -> abax  or abax
+     * > ^  ^     ^ ^       ^ ^
+     * 
+     * 
+     * 
+     * Optimization points:
+     * - do not create a substring, use pointers
+     * - swith to while loop instead of recursion
+     */
     private boolean check(String s) {
         return check(s, true);
     }

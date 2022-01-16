@@ -15,6 +15,10 @@ public class VacuumCleaner {
         System.out.println(new VacuumCleaner().go("RUULLDRD"));
     }
 
+    /*
+    Qty of L must cancel qty of R. Same for U and D
+    o(n) and o(1)
+    */
     private boolean go(String s) {
         int x = 0, y =0;
         for (int i = 0; i < s.length(); i++) {

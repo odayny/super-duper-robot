@@ -1,7 +1,5 @@
-Backup of some solutions from Codesignal
+Backup of some solutions from [Codesignal](https://codesignal.com/).
 
-Same as leetcode things: it's not designed to be runnable in your favorite ide))
+Filenames are just a name of the problem. 
 
-Also, I have no idea
-
-TODO: finish sentence above
+Codesignal does class-wrapping for you so there are only methods of solutions.

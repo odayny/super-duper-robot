@@ -1,5 +1,3 @@
-package com.odayny;
-
 public class AddBinary {
     /*Given two binary strings (strings containing only 1s and 0s) return their sum (also as a binary string).
 Note: neither binary string will contain leading 0s unless the string itself is 0
@@ -17,6 +15,15 @@ Ex: Given the following binary strings...
 
     }
 
+    /*
+    O(n) time, o(n) space
+    n - length of the longest string
+    
+    Quite straight-forward solution: go from end of strings and sum up digits.
+    Ways to optimize: 
+    - do not use % operation, use 'x > 1 ? x - 2 : x' instead
+    - stop is one ofthe pointers < 0 and acc == 0 and copy beginning of another string as beginning of result 
+    */
     private String add(String s1, String s2) {
         int s1i = s1.length() - 1, s2i= s2.length() - 1;
         int acc = 0;

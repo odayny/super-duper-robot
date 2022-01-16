@@ -17,6 +17,10 @@ public class Palindrome {
         System.out.println(new Palindrome().isAPalindrome("algorithm")); //false
         System.out.println(new Palindrome().isAPalindrome("A man, a plan, a canal: Panama.")); //true
     }
+    /* time O(n), space O(1).
+    do a regular palindrome check but on lowercase (may be potimized by lowercasing single symbol on demand)
+    and skipping non-alphabetical symbols on each iteration
+    */
     public boolean isAPalindrome(String input) {
         input = input.toLowerCase(Locale.ROOT);
         int start = 0;

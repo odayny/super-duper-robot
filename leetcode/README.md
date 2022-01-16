@@ -1,3 +1,3 @@
-Tasks from Leetcode
+Problems from [Leetcode](https://leetcode.com/).
 
-Code here is designed to run on Leetcode side. To run it in ide files must be modified.
+Structure: Problem name (mostly with numbers) and Solution file.
