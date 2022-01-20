@@ -2,3 +2,6 @@ playground/**
 .idea/**
 out/**
 .DS_Store
+*.class
+Archive.zip
+.vscode
